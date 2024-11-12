@@ -26,4 +26,13 @@ Make sure you have the necessary NuGet packages installed:
 
 - dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 - dotnet add package Mapster
+- dotnet add package Mapster.DependencyInjection
 - dotnet add package Mapster.EntityFrameworkCore
+
+###  3. Database Setup
+Initialize the SQLite database and apply migrations:
+
+```bash
+Copy code
+- dotnet ef migrations add InitialCreate
+- dotnet ef database update
