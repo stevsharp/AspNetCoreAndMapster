@@ -24,6 +24,6 @@ cd AspNetCoreAndMapster
 ### 2. Install Dependencies
 Make sure you have the necessary NuGet packages installed:
 
-dotnet add package Microsoft.EntityFrameworkCore.Sqlite
-dotnet add package Mapster
-dotnet add package Mapster.EntityFrameworkCore
+- dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+- dotnet add package Mapster
+- dotnet add package Mapster.EntityFrameworkCore
