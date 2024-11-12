@@ -1,4 +1,4 @@
-# AspNetCoreAndMapster
+# Asp.net core And Mapster
 
 This is a simple ASP.NET Core Web API project demonstrating the use of **Mapster** for object mapping and **EF Core with SQLite** for database operations. The project includes a configuration for Mapster, similar to AutoMapper’s `ProjectTo`, allowing efficient query projection.
 
