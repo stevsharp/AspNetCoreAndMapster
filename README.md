@@ -20,3 +20,10 @@ This is a simple ASP.NET Core Web API project demonstrating the use of **Mapster
 ```bash
 git clone https://github.com/yourusername/AspNetCoreAndMapster.git
 cd AspNetCoreAndMapster
+
+### 2. Install Dependencies
+Make sure you have the necessary NuGet packages installed:
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Mapster
+dotnet add package Mapster.EntityFrameworkCore
