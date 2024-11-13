@@ -1,7 +1,7 @@
 using AspNetCoreAndMapster.Models;
+using AspNetCoreAndMapster.Repository;
 
 using Microsoft.EntityFrameworkCore;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMappings();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=mapsterdemo.db"));

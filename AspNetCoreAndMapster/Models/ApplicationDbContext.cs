@@ -1,16 +1,10 @@
-﻿using Mapster;
-
-using Microsoft.EntityFrameworkCore;
-
-using System;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace AspNetCoreAndMapster.Models;
 
-public class AppDbContext : DbContext
+public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
     public DbSet<Item> Items { get; set; }
-
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
