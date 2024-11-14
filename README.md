@@ -36,6 +36,6 @@ Initialize the SQLite database and apply migrations:
 Copy code
 - dotnet ef migrations add InitialCreate
 - dotnet ef database update
-
+```
 ## Connect with Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/spyros-ponaris-913a6937/)
